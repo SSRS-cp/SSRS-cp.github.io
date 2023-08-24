@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>FPS Parser</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="fps_calculator.js"></script>
+    <textarea id="input" rows="15" cols="30" style="font-family: monospace;">
+print((1+x)*(1+x+x*x),3)
+print(1/(1-x),10)
+print(1/(1-x*2),10)
+print(1/((1-x)*(1-x)),10)
+print(1/(1-x-x*x),10)
+print(1/(1-x-x*y),4,4)
+print(log(1+x),10)
+print(exp(x),10)
+print(diff(exp(x*y),x),3,3)
+print(diff(exp(x*y),y),3,3)
+print(int(exp(x*y),x),3,3)
+print(int(exp(x*y),y),3,3)
+</textarea>
+<!--
+<textarea id="input" rows="15" cols="30" style="font-family: monospace;">
+print((1+x)^2)
+print(log(1+x))
+print(log(1+x), 10)
+print(exp(x))
+print(sqrt(1+x))
+print(sum(i,1,5,(1+x)^i))</textarea>
+-->
+    </br>
+    <button onclick="_calculate()">計算</button>
+    </br>
+    <p id="hoge" style="font-family: monospace;"></p>
+  </body>
+</html>
